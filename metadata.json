@@ -1,0 +1,6 @@
+{
+  "name": "CocoSweet Integral",
+  "description": "Prototipo académico de Landing Page para emprendimiento universitario de productos de coco del Pacífico colombiano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
