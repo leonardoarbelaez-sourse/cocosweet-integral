@@ -12,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenValidation }) =>
       {/* Background Image Container with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/images/hero_coconut_pacific_1786562394954.jpg"
+          /assets/images/hero_coconut_pacific_1786562394954.jpg
           alt="CocoSweet Integral - Crema de Coco Gourmet del Pacífico Colombiano"
           className="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.05]"
           referrerPolicy="no-referrer"
