@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { CIRCULAR_STEPS } from '../data/content';
 import { CircularStep } from '../types';
 import { RefreshCw, Flame, GlassWater, Sparkles, Sprout, CheckCircle2, ArrowRight } from 'lucide-react';
+import heroCoconut from '../assets/images/hero_coconut_pacific_1786562394954.jpg';
+import circularCoconut from '../assets/images/circular_coconut_products_1786562425622.jpg';
+import pacificProducers from '../assets/images/pacific_producers_1786562410732.jpg';
 
 export const CircularEconomySection: React.FC = () => {
-  const [activeStepIndex, setActiveStepIndex] = useState<number>(3); // Default to Pulpa / Crema Gourmet
+  const [activeStepIndex, setActiveStepIndex] = useState<number>(3);
   const currentStep = CIRCULAR_STEPS[activeStepIndex];
 
   const getStepIcon = (iconName: string) => {
@@ -19,13 +22,9 @@ export const CircularEconomySection: React.FC = () => {
 
   return (
     <section id="circular" className="py-20 bg-stone-900 text-white relative overflow-hidden">
-      
-      {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-900/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-900/80 text-emerald-300 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider">
             <RefreshCw className="w-4 h-4 text-emerald-400 animate-spin-slow" />
@@ -40,10 +39,7 @@ export const CircularEconomySection: React.FC = () => {
           <div className="w-20 h-1 bg-amber-400 mx-auto rounded-full" />
         </div>
 
-        {/* Circular Cycle Visual Timeline */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          
-          {/* Left: Interactive Node Selector */}
           <div className="lg:col-span-5 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
               Haz clic en cada componente del coco:
@@ -68,15 +64,10 @@ export const CircularEconomySection: React.FC = () => {
                       {step.stepNumber}
                     </div>
                     <div>
-                      <h3 className="font-serif font-bold text-sm sm:text-base text-white">
-                        {step.part}
-                      </h3>
-                      <p className="text-[11px] text-stone-400 line-clamp-1">
-                        {step.title}
-                      </p>
+                      <h3 className="font-serif font-bold text-sm sm:text-base text-white">{step.part}</h3>
+                      <p className="text-[11px] text-stone-400 line-clamp-1">{step.title}</p>
                     </div>
                   </div>
-
                   <div className="flex items-center gap-2">
                     {getStepIcon(step.iconName)}
                     <ArrowRight className={`w-4 h-4 transition-transform ${isSelected ? 'translate-x-1 text-amber-300' : 'text-stone-500'}`} />
@@ -86,38 +77,23 @@ export const CircularEconomySection: React.FC = () => {
             })}
           </div>
 
-          {/* Right: Detailed Component Breakdown */}
           <div className="lg:col-span-7">
             <div className="bg-stone-800/90 border border-stone-700 p-6 sm:p-8 rounded-3xl shadow-2xl space-y-6 relative overflow-hidden">
-              
               <div className="flex items-center justify-between border-b border-stone-700 pb-4">
                 <div>
-                  <span className="text-[10px] uppercase tracking-widest text-emerald-400 font-bold block">
-                    Componente {currentStep.stepNumber} de 4
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-white">
-                    {currentStep.part}
-                  </h3>
+                  <span className="text-[10px] uppercase tracking-widest text-emerald-400 font-bold block">Componente {currentStep.stepNumber} de 4</span>
+                  <h3 className="font-serif text-2xl font-bold text-white">{currentStep.part}</h3>
                 </div>
-                <div className="p-3 bg-stone-900 rounded-2xl border border-stone-700">
-                  {getStepIcon(currentStep.iconName)}
-                </div>
+                <div className="p-3 bg-stone-900 rounded-2xl border border-stone-700">{getStepIcon(currentStep.iconName)}</div>
               </div>
 
               <div className="space-y-3">
-                <h4 className="font-serif text-lg text-amber-300 font-bold">
-                  {currentStep.title}
-                </h4>
-                <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">
-                  {currentStep.description}
-                </p>
+                <h4 className="font-serif text-lg text-amber-300 font-bold">{currentStep.title}</h4>
+                <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">{currentStep.description}</p>
               </div>
 
               <div className="space-y-2 pt-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-emerald-300 block">
-                  Valorización & Productos Obtenidos:
-                </span>
-                
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-300 block">Valorización & Productos Obtenidos:</span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {currentStep.derivedProducts.map((p, i) => (
                     <div key={i} className="p-3 bg-stone-900/80 rounded-xl border border-stone-700 flex items-center gap-2">
@@ -132,12 +108,34 @@ export const CircularEconomySection: React.FC = () => {
                 <span>Indicador de Impacto Ambiental:</span>
                 <span className="font-bold text-emerald-400">0% Desecho Orgánico Redundante</span>
               </div>
-
             </div>
           </div>
-
         </div>
 
+        {/* Galería visual de CocoSweet */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-300">Conoce nuestro proyecto</span>
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-2">Del coco al valor</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-xl aspect-[4/3]">
+              <img src={heroCoconut} alt="Coco del Pacífico colombiano" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <span className="absolute bottom-4 left-4 text-white font-semibold">Origen del coco</span>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-xl aspect-[4/3]">
+              <img src={circularCoconut} alt="Aprovechamiento integral del coco" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <span className="absolute bottom-4 left-4 text-white font-semibold">Aprovechamiento integral</span>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-xl aspect-[4/3]">
+              <img src={pacificProducers} alt="Productores del Pacífico colombiano" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <span className="absolute bottom-4 left-4 text-white font-semibold">Comunidades productoras</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
