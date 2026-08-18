@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CIRCULAR_STEPS } from '../data/content';
-import { CircularStep } from '../types';
 import { RefreshCw, Flame, GlassWater, Sparkles, Sprout, CheckCircle2, ArrowRight } from 'lucide-react';
 import heroCoconut from '../assets/images/hero_coconut_pacific_1786562394954.jpg';
 import circularCoconut from '../assets/images/circular_coconut_products_1786562425622.jpg';
@@ -87,6 +86,20 @@ export const CircularEconomySection: React.FC = () => {
                 <div className="p-3 bg-stone-900 rounded-2xl border border-stone-700">{getStepIcon(currentStep.iconName)}</div>
               </div>
 
+              {currentStep.stepNumber === 1 && (
+                <div className="relative overflow-hidden rounded-2xl border border-amber-500/20 shadow-lg aspect-[16/7]">
+                  <img
+                    src={circularCoconut}
+                    alt="Aprovechamiento de biomasa del coco: fibra y materiales sostenibles"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-4 text-white text-sm font-semibold">
+                    Aprovechamiento de biomasa
+                  </span>
+                </div>
+              )}
+
               <div className="space-y-3">
                 <h4 className="font-serif text-lg text-amber-300 font-bold">{currentStep.title}</h4>
                 <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">{currentStep.description}</p>
@@ -112,7 +125,6 @@ export const CircularEconomySection: React.FC = () => {
           </div>
         </div>
 
-        {/* Galería visual de CocoSweet */}
         <div className="mt-16">
           <div className="text-center mb-8">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-300">Conoce nuestro proyecto</span>
