@@ -30,7 +30,7 @@ export const StarProductSection: React.FC<StarProductSectionProps> = ({ onOpenVa
           <div className="lg:col-span-5 space-y-6">
             <div className="relative group overflow-hidden rounded-2xl bg-stone-900 aspect-4/3 shadow-md">
               <img
-                src="/src/assets/images/hero_coconut_pacific_1786562394954.jpg"
+                /assets/images/hero_coconut_pacific_1786562394954.jpg
                 alt="Crema de Coco Gourmet CocoSweet Integral"
                 className="w-full h-full object-cover transition-transform duration-500 filter brightness-95"
                 referrerPolicy="no-referrer"
