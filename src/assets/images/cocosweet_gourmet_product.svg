@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dce9df"/><stop offset="1" stop-color="#f5efe2"/></linearGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2f8f91"/><stop offset="1" stop-color="#0d5963"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2d6a4f"/><stop offset="1" stop-color="#143d2d"/></linearGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e9dfc7"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b98b32"/><stop offset=".5" stop-color="#f1d27b"/><stop offset="1" stop-color="#a97720"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<path d="M0 330 Q230 170 450 320 T900 260 T1200 300 V0 H0Z" fill="#315d42" opacity=".28"/>
+<path d="M0 390 Q260 285 500 390 T950 360 T1200 390 V650 H0Z" fill="url(#sea)"/>
+<path d="M0 470 Q250 430 480 480 T950 455 T1200 475" fill="none" stroke="#b9e0d9" stroke-width="18" opacity=".8"/>
+<path d="M0 540 Q260 500 500 550 T950 525 T1200 545" fill="none" stroke="#e5f4ed" stroke-width="9" opacity=".75"/>
+<path d="M0 0 L190 0 L85 245 L35 160Z" fill="#557c43" opacity=".8"/><path d="M118 0 L275 0 L155 280 L95 175Z" fill="#315d42" opacity=".7"/>
+<path d="M1030 0 Q970 145 900 230 Q1010 180 1090 95 Q1080 180 1140 250 Q1190 150 1200 70 V0Z" fill="#2f6242" opacity=".85"/>
+<ellipse cx="610" cy="760" rx="450" ry="70" fill="#3d2c1e" opacity=".22"/>
+<rect x="235" y="650" width="730" height="90" rx="20" fill="#765031"/>
+<rect x="270" y="610" width="660" height="55" rx="18" fill="#a97442"/>
+<g filter="url(#shadow)">
+  <rect x="425" y="295" width="365" height="85" rx="28" fill="url(#gold)" stroke="#8e691f" stroke-width="5"/>
+  <rect x="445" y="350" width="325" height="365" rx="42" fill="url(#cream)" stroke="#b9aa8b" stroke-width="6"/>
+  <path d="M445 405 Q610 350 770 405 V680 Q610 720 445 680Z" fill="#f8f2e4"/>
+  <rect x="450" y="420" width="315" height="235" rx="20" fill="#f4ecda" stroke="#d1c29e" stroke-width="3"/>
+  <path d="M475 455 Q505 420 535 455 M685 455 Q715 420 745 455" fill="none" stroke="#5a783f" stroke-width="12"/>
+  <text x="607" y="505" text-anchor="middle" font-family="Georgia,serif" font-size="48" font-weight="700" fill="#4b2f1c">COCOSWEET</text>
+  <text x="607" y="535" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#28583f">CREMA DE COCO GOURMET</text>
+  <text x="607" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#604b35">Del Pacífico colombiano</text>
+  <circle cx="607" cy="615" r="42" fill="#7a4d2b"/>
+  <path d="M579 615 Q607 575 635 615 Q607 650 579 615Z" fill="#fff8e7"/>
+  <path d="M480 600 Q510 570 540 600" fill="none" stroke="#78965d" stroke-width="9"/><path d="M675 600 Q705 570 735 600" fill="none" stroke="#78965d" stroke-width="9"/>
+  <text x="607" y="680" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#28583f">250 g  •  100% NATURAL</text>
+</g>
+<g transform="translate(90 575)">
+ <path d="M0 80 Q55 15 120 80 Q60 150 0 80Z" fill="#6d472c"/><path d="M18 76 Q60 42 102 76 Q60 112 18 76Z" fill="#fff9e9"/>
+</g>
+<g transform="translate(845 515)"><rect width="250" height="210" rx="25" fill="url(#green)" opacity=".95"/><text x="125" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#f5e7b0">COCO 100%</text><text x="125" y="73" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#fff">DEL PACÍFICO COLOMBIANO</text><line x1="35" y1="95" x2="215" y2="95" stroke="#d9c47c"/><text x="125" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#fff">PRODUCCIÓN SOSTENIBLE</text><text x="125" y="165" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#fff">APOYO A PRODUCTORES</text><text x="125" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#d9c47c">LO BUENO DE NUESTRA TIERRA</text></g>
+<text x="95" y="310" font-family="Georgia,serif" font-size="62" font-weight="700" fill="#4b2f1c">COCOSWEET</text>
+<text x="98" y="350" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4" fill="#28583f">CREMA DE COCO GOURMET</text>
+<text x="100" y="405" font-family="Arial,sans-serif" font-size="22" fill="#4b2f1c">Del Pacífico colombiano, naturalmente deliciosa</text>
+<rect x="80" y="440" width="255" height="95" rx="18" fill="#244d39"/><text x="207" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">100% NATURAL</text><text x="207" y="505" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#f1d27b">SIN CONSERVANTES</text>
+<text x="600" y="845" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#244d39">CocoSweet • lo bueno de nuestra tierra, para tu bienestar.</text>
+</svg>
